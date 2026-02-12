@@ -112,3 +112,34 @@ body {
     display: flex;
     gap: 10px;
 }
+
+.delete-card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #dc3545;
+}
+
+.delete-title {
+    margin-bottom: 20px;
+    color: #dc3545;
+}
+
+.delete-text {
+    font-size: 1.05rem;
+}
+
+.delete-warning {
+    margin-top: 10px;
+    color: #b02a37;
+    font-weight: 500;
+}
+
+.delete-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
