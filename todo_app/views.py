@@ -44,6 +44,11 @@ class TagUpdateView(generic.UpdateView):
     success_url = reverse_lazy("todo_app:tag-list")
 
 
+class TagDeleteView(generic.DeleteView):
+    model = Tag
+    success_url = reverse_lazy("todo_app:tag-list")
+
+
 def toggle_complete_task(request, pk):
     task = Task.objects.get(id=pk)
     if task.status:
