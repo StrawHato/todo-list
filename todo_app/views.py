@@ -23,6 +23,11 @@ class TodoUpdateView(generic.UpdateView):
     success_url = reverse_lazy("todo_app:todo-list")
 
 
+class TodoDeleteView(generic.DeleteView):
+    model = Task
+    success_url = reverse_lazy("todo_app:todo-list")
+
+
 class TagListView(generic.ListView):
     model = Tag
 

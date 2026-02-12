@@ -20,7 +20,7 @@
         <li class="text-hidden">Tags:{% for tag in task.tags.all %} {{ tag }} {% endfor %}</li>
         <li>
           <a href="{% url 'todo_app:task-update' pk=task.id %}" class="btn btn-primary">Update</a>
-          <a href="#" class="btn btn-danger">Delete</a>
+          <a href="{% url 'todo_app:task-delete' pk=task.id %}" class="btn btn-danger">Delete</a>
         </li>
       {% endfor %}
     </ul>
