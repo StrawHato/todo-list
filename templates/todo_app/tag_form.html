@@ -3,24 +3,32 @@
 
 {% block content %}
 
-  <h1 class="mb-4">
-    {{ object|yesno:"Update,Create" }} tag
-  </h1>
+<div class="form-wrapper">
 
-  <form method="post" novalidate>
-    {% csrf_token %}
+  <div class="form-card">
 
-    {{ form|crispy }}
+    <h2 class="form-title">
+      {{ object|yesno:"Update,Create" }} tag
+    </h2>
 
-    <div class="d-flex gap-2 mt-4">
-      <button type="submit" class="btn btn-primary">
-        Save
-      </button>
+    <form method="post" novalidate>
+      {% csrf_token %}
 
-      <a href="{% url 'todo_app:tag-list' %}" class="btn btn-secondary">
-        Cancel
-      </a>
-    </div>
-  </form>
+      {{ form|crispy }}
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-success">
+          Save
+        </button>
+
+        <a href="{% url 'todo_app:tag-list' %}" class="btn btn-outline-secondary">
+          Cancel
+        </a>
+      </div>
+    </form>
+
+  </div>
+
+</div>
 
 {% endblock %}

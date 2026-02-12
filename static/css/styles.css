@@ -113,6 +113,10 @@ body {
     gap: 10px;
 }
 
+.form-card input[type="text"] {
+    max-width: 400px;
+}
+
 .delete-card {
     width: 100%;
     max-width: 500px;
