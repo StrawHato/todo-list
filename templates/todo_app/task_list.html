@@ -10,8 +10,10 @@
         <li><strong>{{ task.content }}</strong>
           {% if task.status %}
             Done
+            <a href="{% url 'todo_app:toggle-complete' pk=task.pk %}" class="btn btn-secondary">Undo</a>
           {% else %}
             Not done
+            <a href="{% url 'todo_app:toggle-complete' pk=task.pk %}" class="btn btn-primary">Complete</a>
           {% endif %}
         </li>
         <li>Created: {{ task.created_at }} {% if task.deadline %} Deadline: {{ task.deadline }} {% endif %}</li>
