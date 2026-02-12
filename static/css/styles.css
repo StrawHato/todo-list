@@ -85,3 +85,30 @@ body {
     border-radius: 20px;
     font-size: 0.85rem;
 }
+
+.form-wrapper {
+    display: flex;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.form-title {
+    margin-bottom: 25px;
+}
+
+.form-check {
+    margin-bottom: 8px;
+}
+
+.form-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
