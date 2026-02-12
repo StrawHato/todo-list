@@ -1,0 +1,168 @@
+[
+  {
+    "model": "todo_app.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Work"
+    }
+  },
+  {
+    "model": "todo_app.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Study"
+    }
+  },
+  {
+    "model": "todo_app.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Home"
+    }
+  },
+  {
+    "model": "todo_app.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Health"
+    }
+  },
+  {
+    "model": "todo_app.tag",
+    "pk": 5,
+    "fields": {
+      "name": "Personal"
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 1,
+    "fields": {
+      "content": "Finish Django project",
+      "created_at": "2026-02-10T09:00:00Z",
+      "deadline": "2026-02-20T18:00:00Z",
+      "status": false,
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 2,
+    "fields": {
+      "content": "Read Python documentation",
+      "created_at": "2026-02-10T10:00:00Z",
+      "deadline": null,
+      "status": false,
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 3,
+    "fields": {
+      "content": "Buy groceries",
+      "created_at": "2026-02-10T11:00:00Z",
+      "deadline": null,
+      "status": true,
+      "tags": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 4,
+    "fields": {
+      "content": "Workout session",
+      "created_at": "2026-02-10T12:00:00Z",
+      "deadline": "2026-02-11T07:00:00Z",
+      "status": false,
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 5,
+    "fields": {
+      "content": "Call mom",
+      "created_at": "2026-02-10T13:00:00Z",
+      "deadline": null,
+      "status": true,
+      "tags": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 6,
+    "fields": {
+      "content": "Prepare presentation",
+      "created_at": "2026-02-10T14:00:00Z",
+      "deadline": "2026-02-15T09:00:00Z",
+      "status": false,
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 7,
+    "fields": {
+      "content": "Complete homework",
+      "created_at": "2026-02-10T15:00:00Z",
+      "deadline": "2026-02-12T20:00:00Z",
+      "status": false,
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 8,
+    "fields": {
+      "content": "Clean the house",
+      "created_at": "2026-02-10T16:00:00Z",
+      "deadline": null,
+      "status": false,
+      "tags": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 9,
+    "fields": {
+      "content": "Doctor appointment",
+      "created_at": "2026-02-10T17:00:00Z",
+      "deadline": "2026-02-18T10:30:00Z",
+      "status": false,
+      "tags": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "todo_app.task",
+    "pk": 10,
+    "fields": {
+      "content": "Plan weekend trip",
+      "created_at": "2026-02-10T18:00:00Z",
+      "deadline": null,
+      "status": false,
+      "tags": [
+        5
+      ]
+    }
+  }
+]
