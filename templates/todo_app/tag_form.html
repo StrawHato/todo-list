@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+
+<div class="form-wrapper">
+
+  <div class="form-card">
+
+    <h2 class="form-title">
+      {{ object|yesno:"Update,Create" }} tag
+    </h2>
+
+    <form method="post" novalidate>
+      {% csrf_token %}
+
+      {{ form|crispy }}
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-success">
+          Save
+        </button>
+
+        <a href="{% url 'todo_app:tag-list' %}" class="btn btn-outline-secondary">
+          Cancel
+        </a>
+      </div>
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}
